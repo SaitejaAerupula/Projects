@@ -1,1 +1,122 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Krishna Janmashtami</title>
+    <link rel="stylesheet" href="k.css">
+</head>
+<body>
+    <div class="janmashtami-container">
+        <div class="flute"></div>
+        <h1 class="animated-text">
+            🦚 Happy Krishna Janmashtami! 🦚
+        </h1>
+        <p class="sub-text">
+            May Lord Krishna bless you with joy, peace, and prosperity.
+        </p>
+        <div class="pot"></div>
+    </div>
+</body>
+</html>
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at 60% 40%, #ffe6e6 0%, #fffbe7 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.janmashtami-container {
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+.animated-text {
+    font-size: 2.5em;
+    color: #3b5998;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: textBounce 1.5s infinite alternate;
+    text-shadow: 0 0 12px #ffb347;
+}
+
+@keyframes textBounce {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); color: #ffb347; }
+}
+
+.sub-text {
+    font-size: 1.3em;
+    color: #138808;
+    margin-bottom: 40px;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Decorative flute */
+.flute {
+    width: 180px;
+    height: 16px;
+    background: linear-gradient(90deg, #deb887 70%, #8b5c2a 100%);
+    border-radius: 8px;
+    margin: 0 auto 30px auto;
+    position: relative;
+    box-shadow: 0 2px 8px #b8860b55;
+}
+.flute::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 10px;
+    height: 6px;
+    background: #3b5998;
+    border-radius: 50%;
+}
+.flute::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 10px;
+    height: 6px;
+    background: #3b5998;
+    border-radius: 50%;
+}
+
+/* Decorative pot */
+.pot {
+    width: 70px;
+    height: 70px;
+    background: #ffb347;
+    border-radius: 0 0 50px 50px / 0 0 40px 40px;
+    margin: 30px auto 0 auto;
+    position: relative;
+    box-shadow: 0 4px 16px #b8860b44;
+}
+.pot::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    width: 50px;
+    height: 20px;
+    background: #fff;
+    border-radius: 25px 25px 15px 15px / 15px 15px 10px 10px;
+    border: 2px solid #b8860b;
+}
+.pot::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+    width: 30px;
+    height: 10px;
+    background: #138808;
+    border-radius: 0 0 15px 15px / 0 0 10px 10px;
+}
